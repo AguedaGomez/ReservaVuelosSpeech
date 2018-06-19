@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<grammar version="1.0" xml:lang="es-ES" mode="voice" root="MainRule" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0" >
+
+  <rule id="MainRule" scope="public">
+    <example> Por favor, quiero ir a Madrid desde Londres </example>
+    <example> Quiero ir a San Francisco </example>
+
+    <item repeat="0-1"> Por favor </item>
+    <one-of>
+      <item>
+        <tag>out.Cantidad = "1"</tag>
+        Quiero ir
+      </item>
+      <item>
+        <item repeat="0-1"> Quiero </item>
+        Un <tag>out.Cantidad = "1"</tag>
+        billete
+      </item>
+      <item>
+        <item repeat="0-1"> Quiero </item>
+        <ruleref uri="#Cantidad"/><tag>out.Cantidad = rules.Cantidad</tag> billetes
+      </item>
+      <item>
+        <item repeat="0-1"> Quiero </item>
+        un <tag>out.Cantidad = "1"</tag>
+        vuelo barato
+      </item>
+      <item>
+        ¿Hay
+        un <tag>out.Cantidad = "1"</tag>
+        vuelo
+      </item>
+    </one-of>
+    <ruleref uri="#Modo"/> <tag> out.Modo=rules.Modo; </tag>
+    <ruleref uri="#Destino"/> <tag> out.Destino=rules.Destino; </tag>
+    <ruleref uri="#Origen"/><tag> out.Origen=rules.Origen; </tag>
+    <ruleref uri="#Fecha"/><tag> out.Fecha=rules.Fecha; </tag>
+    
+    <item repeat="0-1"> por favor </item>
+    <item repeat="0-1"> gracias </item>
+  </rule>
+
+  <rule id="Destino" scope="public">
+    <one-of>
+      <item>
+        para <ruleref uri="#Aeropuertos"/> <tag> out = rules.Aeropuertos; </tag>
+      </item>
+      <item>
+        a <ruleref uri="#Aeropuertos"/> <tag> out = rules.Aeropuertos; </tag>
+      </item>
+    </one-of>
+  </rule>
+
+  <rule id="Origen" scope="public">
+    <item repeat="0-1">
+      desde <ruleref uri="#Aeropuertos"/> <tag> out = rules.Aeropuertos; </tag>
+    </item>
+  </rule>
+
+  <rule id="Aeropuertos" scope="public">
+    <one-of>
+      <item>
+        Madrid <tag> out = "MAD"</tag>
+      </item>
+      <item>
+        Barajas <tag> out = "MAD"</tag>
+      </item>
+      <item>
+        Barcelona <tag> out = "BCN"</tag>
+      </item>
+      <item>
+        El Prat <tag> out = "BCN"</tag>
+      </item>
+      <item>
+        Valencia <tag> out = "VLC"</tag>
+      </item>
+      <item>
+        Málaga <tag> out = "AGP"</tag>
+      </item>
+      <item>
+        Londres <tag> out = "LHR"</tag>
+      </item>
+      <item>
+        París <tag> out = "ORY"</tag>
+      </item>
+      <item>
+        Los Ángeles <tag> out = "LAX"</tag>
+      </item>
+      <item>
+        Frankfurt <tag> out = "FRA"</tag>
+      </item>
+      <item>
+        Singapur <tag> out = "SIN"</tag>
+      </item>
+      <item>
+        San Francisco <tag> out = "SFO"</tag>
+      </item>
+      <item>
+        Miami <tag> out = "MIA"</tag>
+      </item>
+      <item>
+        Ámsterdam <tag> out = "AMS"</tag>
+      </item>
+      <item>
+        Hong Kong <tag> out = "HKG"</tag>
+      </item>
+      <item>
+        Nueva York <tag> out = "JKF"</tag>
+      </item>
+      <item>
+        Bogotá <tag> out = "BOG"</tag>
+      </item>
+      <item>
+        Roma <tag> out = "FCO"</tag>
+      </item>
+      <item>
+        Bombay <tag> out = "BOM"</tag>
+      </item>
+    </one-of>
+  </rule>
+
+  <rule id="Modo" scope="public">
+    <item repeat="0-1">
+      <one-of>
+        <item>
+          de ida <tag> out = "ida" </tag>
+        </item>
+        <item>
+          de ida y vuelta <tag> out = "ida y vuelta" </tag>
+        </item>
+      </one-of>
+    </item>
+  </rule>
+
+  <rule id="Fecha" scope="public">
+    <item repeat="0-1">para</item>
+    <item repeat="0-1">
+      <one-of>
+        <item>
+          mañana <tag> out = "mañana"</tag>
+        </item>
+        <item>
+          la semana que viene <tag> out = "semana que viene"</tag>
+        </item>
+        <item>
+          el mes que viene <tag> out = "siguiente mes"</tag>
+        </item>
+        <item>
+          el <ruleref uri="#Dia"/> <tag> out.Dia = rules.Dia; </tag> de <ruleref uri="#Mes"/> <tag> out.Mes = rules.Mes;</tag>
+          <tag>out = out.Dia + out.Mes;</tag>
+        </item>
+      </one-of>
+    </item>
+  </rule>
+
+  <rule id="Mes" scope="public">
+    <one-of>
+      <item>Enero <tag> out = "/1"</tag> </item>
+      <item>Febrero <tag> out = "/2"</tag> </item>
+      <item>Marzo <tag> out = "/3"</tag> </item>
+      <item>Abril <tag> out = "/4"</tag> </item>
+      <item>Mayo <tag> out = "/5"</tag> </item>
+      <item>Junio <tag> out = "/6"</tag> </item>
+      <item>Julio <tag> out = "/7"</tag> </item>
+      <item>Agosto <tag> out = "/8"</tag> </item>
+      <item>Septiembre <tag> out = "/9"</tag> </item>
+      <item>Octubre <tag> out = "/10"</tag> </item>
+      <item>Noviembre <tag> out = "/11"</tag> </item>
+      <item>Diciembre <tag> out = "/12"</tag> </item>
+    </one-of>
+  </rule>
+
+
+  <rule id="Dia" scope="public">
+    <one-of>
+      <item>Uno <tag> out = "1"</tag> </item>
+      <item>Dos <tag> out = "2"</tag> </item>
+      <item>Tres <tag> out = "3"</tag> </item>
+      <item>Cuatro<tag> out = "4"</tag></item>
+      <item>Cinco<tag> out = "5"</tag></item>
+      <item>Seis<tag> out = "6"</tag></item>
+      <item>Siete<tag> out = "7"</tag></item>
+      <item>Ocho<tag> out = "8"</tag></item>
+      <item>Nueve<tag> out = "9"</tag></item>
+      <item>Diez<tag> out = "10"</tag></item>
+      <item>Once<tag> out = "11"</tag></item>
+      <item>Doce<tag> out = "12"</tag></item>
+      <item>Trece<tag> out = "13"</tag></item>
+      <item>Catorce<tag> out = "14"</tag></item>
+      <item>Quince<tag> out = "15"</tag></item>
+      <item>Dieciseis<tag> out = "16"</tag></item>
+      <item>Diecisiete<tag> out = "17"</tag></item>
+      <item>Dieciocho<tag> out = "18"</tag></item>
+      <item>Diecinueve<tag> out = "19"</tag></item>
+      <item>Veinte<tag> out = "20"</tag></item>
+      <item>Veintiuno<tag> out = "21"</tag></item>
+      <item>Veintidos<tag> out = "22"</tag></item>
+      <item>Veintitres<tag> out = "23"</tag></item>
+      <item>Veinticuatro<tag> out = "24"</tag></item>
+      <item>Veinticinco<tag> out = "25"</tag></item>
+      <item>Veintiseis<tag> out = "26"</tag></item>
+      <item>Veintisiete<tag> out = "27"</tag></item>
+      <item>Veintiocho<tag> out = "28"</tag></item>
+      <item>Veintinueve<tag> out = "29"</tag></item>
+      <item>Treinta<tag> out = "30"</tag></item>
+      <item>Treinta y uno<tag> out = "31"</tag></item>
+    </one-of>
+  </rule>
+
+  <rule id="Cantidad" scope="public">
+    <one-of>
+      <item>
+        Dos <tag> out = "2"</tag>
+      </item>
+      <item>
+        Tres <tag> out = "3"</tag>
+      </item>
+      <item>
+        Cuatro <tag> out = "4"</tag>
+      </item>
+      <item>
+        Cinco <tag> out = "5"</tag>
+      </item>
+      <item>
+        Seis <tag> out = "6"</tag>
+      </item>
+      <item>
+        Siete <tag> out = "7"</tag>
+      </item>
+      <item>
+        Ocho <tag> out = "8"</tag>
+      </item>
+      <item>
+        Nueve <tag> out = "9"</tag>
+      </item>
+    </one-of>
+  </rule>
+</grammar>

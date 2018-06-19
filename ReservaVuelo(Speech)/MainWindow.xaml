@@ -1,0 +1,46 @@
+﻿<Window x:Class="ReservaVuelo_Speech_.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReservaVuelo_Speech_"
+        mc:Ignorable="d"
+        Title="Asistente de reserva de vuelos" Height="600" Width="450">
+    <Grid ClipToBounds="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock FontSize="16" FontStyle="Italic" Name="RecogText" TextWrapping="WrapWithOverflow" VerticalAlignment="Center" Background="WhiteSmoke" Margin="10"/>
+
+        <StackPanel Grid.Row="1" Margin="10" Name="RecognizedText" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Label FontSize="20" FontWeight="Bold">Reserva</Label>
+            
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center">
+                <TextBox Name="NTickets" FontSize="20" Margin="10" VerticalAlignment="Center" HorizontalAlignment="Right" IsReadOnly="True">0</TextBox>
+                <Label Name="Tickets" FontSize="20" Margin="10" HorizontalAlignment="Left">Billetes</Label>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label FontSize="20" Margin="10">Origen</Label>
+                <TextBox Name="Origin" FontSize="20" Margin="10" IsReadOnly="True">--</TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label FontSize="20" Margin="10">Destino</Label>
+                <TextBox Name="Destination" FontSize="20" Margin="10" IsReadOnly="True"> -- </TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <Label FontSize="20" Margin="10">Fecha</Label>
+                <TextBox Name="Date" FontSize="20" Margin="10" IsReadOnly="True">--</TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Name="ModeIda" FontSize="20" VerticalContentAlignment="Center" Margin="10">Ida</RadioButton>
+                <RadioButton Name="ModeIdaVuelta" FontSize="20" VerticalContentAlignment="Center" Margin="10">Ida y vuelta</RadioButton>
+            </StackPanel>
+        </StackPanel>
+        
+        <Button Margin="10" Name="RecognizedButton" Grid.Row="2" Click="RecognizedButton_Click" FontSize="20" FontStyle="Italic" BorderBrush="#FF151A8F" Background="{x:Null}">Pulsa para hablar</Button>
+        
+    </Grid>
+</Window>

@@ -1,0 +1,15 @@
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\bin\Debug\ReservaVuelo(Speech).exe.config
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\bin\Debug\ReservaVuelo(Speech).exe
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\bin\Debug\ReservaVuelo(Speech).pdb
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech).csprojAssemblyReference.cache
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\MainWindow.g.cs
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\App.g.cs
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech)_MarkupCompile.cache
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech)_MarkupCompile.lref
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\MainWindow.baml
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech).g.resources
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo_Speech_.Properties.Resources.resources
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech).csproj.GenerateResource.cache
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech).csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech).exe
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Debug\ReservaVuelo(Speech).pdb
