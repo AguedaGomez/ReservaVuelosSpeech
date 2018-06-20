@@ -72,7 +72,7 @@ namespace ReservaVuelo_Speech_
                     ModeIda.IsChecked = true;
                 else
                     ModeIdaVuelta.IsChecked = true;
-                RecogText.Text = "Has dicho: \"" + e.Result.Text + "\"";
+                RecogText.Text = inputCheck.CheckVoiceText(e.Result.Text);
             }
             
             startRecognition = false;

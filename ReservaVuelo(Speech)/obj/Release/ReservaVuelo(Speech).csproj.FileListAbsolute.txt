@@ -1,0 +1,14 @@
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\bin\Release\ReservaVuelo(Speech).exe.config
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\bin\Release\ReservaVuelo(Speech).exe
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\bin\Release\ReservaVuelo(Speech).pdb
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\MainWindow.g.cs
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\App.g.cs
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo(Speech)_MarkupCompile.cache
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo(Speech)_MarkupCompile.lref
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\MainWindow.baml
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo(Speech).g.resources
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo_Speech_.Properties.Resources.resources
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo(Speech).csproj.GenerateResource.cache
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo(Speech).csproj.CoreCompileInputs.cache
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo(Speech).exe
+D:\UNIVERSIDAD\MASTER\INTERFACES_MULTIMODALES\Entregable4\ReservaVuelo(Speech)\ReservaVuelo(Speech)\obj\Release\ReservaVuelo(Speech).pdb
