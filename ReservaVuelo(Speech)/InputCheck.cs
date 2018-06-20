@@ -32,6 +32,7 @@ namespace ReservaVuelo_Speech_
                     break;
                 case "siguiente mes":
                     res = dateTime.Day + "/" + dateTime.AddMonths(1).Month + "/" + dateTime.Year;
+                    if (!IsDate(res)) res = "Fecha no válida";
                     break;
                 default:
                     res = date + "/" + dateTime.Year;
